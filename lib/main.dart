@@ -7,15 +7,22 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My First App'),
+        title: Text('Flutter App'),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Text(
-          'This is the body of the app.',
-          style: TextStyle(
-              fontSize: 22, fontWeight: FontWeight.bold, color: Colors.grey),
+        child: RaisedButton.icon(
+          onPressed: () => print('You pressed the button.'),
+          icon: Icon(
+            Icons.accessibility_new,
+            color: Colors.white,
+          ),
+          label: Text(
+            'Press me',
+            style: TextStyle(color: Colors.white),
+          ),
+          color: Colors.blue,
         ),
       ),
       floatingActionButton: FloatingActionButton(
