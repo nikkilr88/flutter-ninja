@@ -9,25 +9,20 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter App'),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: RaisedButton.icon(
-          onPressed: () => print('You pressed the button.'),
-          icon: Icon(
-            Icons.accessibility_new,
-            color: Colors.white,
-          ),
-          label: Text(
-            'Press me',
-            style: TextStyle(color: Colors.white),
-          ),
-          color: Colors.blue,
-        ),
+      body: Container(
+        color: Colors.black87,
+        padding: EdgeInsets.all(50),
+        alignment: Alignment(0,0),
+        child: Text('This is the body.', style: TextStyle(
+          color: Colors.white,
+          fontSize: 18
+        ),),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text('Press'),
-        backgroundColor: Colors.green,
+        child: Icon(Icons.add),
+        backgroundColor: Colors.blue,
         onPressed: () {},
       ),
     );
